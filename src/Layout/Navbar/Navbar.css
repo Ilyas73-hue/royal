@@ -79,9 +79,7 @@ margin-bottom: 0px;
 
 
 #navbar-2{
-    background-image: url("../../RoyalAssets//nav_bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-bottom: 1px solid var(--text-color1);
 }
 
 
