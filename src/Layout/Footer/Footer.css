@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+:root{
+    --bg-color: rgb(51, 51, 51);
+    --bg-color1: black;
+    --primarycolor: #FFC515;
+    --text-color: #858585;
+    --text-color1: #FFFFFF;
+    --font1: "Nunito", serif;
+    --font2: "Heebo", serif;
+}
+
+#footer{
+    background-image: url("../../RoyalAssets//royal_footer_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+/* Section 1 */
+
+/* Part 1 */
+
+#footer-section-1{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+   justify-items: center;
+}
+
+
+#footer-section-1-div-1-2{
+    margin-top: 20px;
+}
+
+#footer-section-1-div-1-2-p-1{
+    font-family: var(--font2);
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+text-align: justify;
+color: var(--text-color1);
+width: 310px;
+}
+
+
+/* Part 2 */
+
+
+#footer-section-1-div-2{
+    width: 200px;
+}
+
+#footer-section-1-div-2-1{
+    margin-top: 20px;
+}
+
+#footer-section-1-div-2-1-p-1{
+    font-family: var(--font2);
+font-size: 18px;
+font-weight: 600;
+line-height: 26.44px;
+text-align: justify;
+color: var(--text-color1);
+}
+
+#footer-section-1-div-2-2-ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#footer-section-1-div-2-2-li{
+    list-style-type: none;
+}
+
+
+#footer-section-1-div-2-2-li-a{
+    text-decoration: none;
+    color: var(--text-color1);
+    font-family: var(--font1);
+font-size: 15px;
+font-weight: 500;
+line-height: 22.03px;
+text-align: justified;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}

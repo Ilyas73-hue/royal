@@ -4,6 +4,7 @@
 
 :root{
     --bg-color: rgb(51, 51, 51);
+    --bg-color1: black;
     --primarycolor: #FFC515;
     --text-color: #858585;
     --text-color1: #FFFFFF;
@@ -80,6 +81,7 @@ margin-bottom: 0px;
 
 #navbar-2{
     border-bottom: 1px solid var(--text-color1);
+   background-color: var(--bg-color1);
 }
 
 
