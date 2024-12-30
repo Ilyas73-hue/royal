@@ -40,16 +40,16 @@ function Navbar() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" id="nav-link"  href="#">Home</a>
+          <a class="nav-link" id="nav-link"  href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link" href="#">About us</a>
+          <a class="nav-link" id="nav-link" href="/about">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link"  href="#">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link" href="#">Gallery</a>
+          <a class="nav-link" id="nav-link" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link" href="#">Contact</a>

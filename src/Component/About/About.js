@@ -1,7 +1,5 @@
 import React from 'react';
-import "./Home.css";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import "./About.css";
 import home_card_img_1 from "../../RoyalAssets/royal_card_img 1.png";
 import home_card_img_2 from "../../RoyalAssets/royal_card_img 2.png";
 import home_card_img_3 from "../../RoyalAssets/royal_card_img 3.png";
@@ -21,8 +19,7 @@ import mark_1 from "../../RoyalAssets/mark_1.png";
 import mark_2 from "../../RoyalAssets/mark_2.png";
 import customer_says from "../../RoyalAssets/customer_says.png";
 
-
-function Home() {
+function About() {
 
   const home_sample_card = [{
     id: 1,
@@ -92,31 +89,24 @@ function Home() {
   }
 ]
 
+
   return (
-    <div id="home">
-      {/* home section 1 */}
+    <div id="about">
+        {/* Section 1 */}
+        <section id="about-section-1">
+           <div id="about-section-1-div-1">
+             <p id="about-section-1-div-1-p-1">Indian Restaurant Birmingham - 
+             Royal Mysore Dosa</p>
+           </div>
+           <div  id="about-section-1-div-2">
+              <p id="about-section-1-div-2-p-1">About us</p>
+              <p id="about-section-1-div-2-p-2">Home > About</p>
+           </div>
+        </section>
 
-       <section id="home-section-1">
-       <div class="carousel-inner">
-    <div id="carousel-content">
-       <div id="carousel-content-1">
-          <p id="carousel-content-1-p-1">Craving delicious Indian food in Birmingham?</p>
-          <h6 id="carousel-content-1-h6-1">Indian Restaurant Birmingham - 
-          Royal Mysore Dosa</h6>
-          <div id="carousel-button">
-          <button id="carousel-button-1">Book Table</button>
-          <button id="carousel-button-2">Explore Menu</button>
-          </div>
-       </div>
-    </div>
- 
-  </div>
+      {/* home-section-2 */}
 
-       </section>
-
-       {/* home-section-2 */}
-
-       <section  id="home-section-2">
+      <section  id="home-section-2">
         {/* section 2 part 1 */}
         <div className='container' id="home-section-2-div-1">
             <div id="home-section-2-div-1-1">
@@ -317,10 +307,8 @@ function Home() {
             </div>
        </section>
 
-
-
     </div>
   )
 }
 
-export default Home;
+export default About;
