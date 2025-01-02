@@ -18,7 +18,18 @@
 }
 
 
-#about-section-1{
+#gallery{
+    padding-top: 11vh;
+}
+
+@media(max-width: 769px){
+    #gallery{
+        padding-top: 10vh;
+    }
+}
+
+
+#gallery-section-1{
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url("../../RoyalAssets//nav_bg.png");
@@ -27,13 +38,13 @@
   background-position: center;
 }
 
-#about-section-1-div-1{
+#gallery-section-1-div-1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#about-section-1-div-1-p-1{
+#gallery-section-1-div-1-p-1{
     width: 600px;
     font-family: var(--font1);
 font-size: 36px;
@@ -44,14 +55,14 @@ text-align: center;
 color: var(--text-color1);
 }
 
-#about-section-1-div-2{
+#gallery-section-1-div-2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#about-section-1-div-2-p-1{
+#gallery-section-1-div-2-p-1{
     font-family: var(--font2);
 font-size: 26px;
 font-weight: 700;
@@ -59,12 +70,18 @@ color: var(--primarycolor);
 margin-bottom: 0px;
 }
 
-#about-section-1-div-2-p-2{
+#gallery-section-1-div-2-p-2{
     font-family: var(--font2);
 font-size: 15px;
 font-weight: 600;
 color: var(--text-color1);
 margin-bottom: 0px;
+}
+
+@media(max-width: 426px){
+    #gallery-section-1-div-1-p-1{
+        width: 100%;
+    }
 }
 
 /* Section 2 */
@@ -80,6 +97,8 @@ margin-bottom: 0px;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #gallery-section-2-div-1-line{
@@ -93,4 +112,97 @@ margin-bottom: 0px;
     font-family: var(--font2);
 font-size: 18px;
 font-weight: 600;
+}
+
+#gallery-section-2-div-2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+   justify-items: center;
+   gap: 20px;
+}
+
+#gallery-section-2-div-1-img{
+    width: 330px;
+    height: 250px;
+}
+
+
+@media(max-width: 1022px){
+    #gallery-section-2-div-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+    }
+}
+
+@media(max-width: 767px){
+    #gallery-section-2-div-2{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+    }
+}
+
+
+@media(max-width: 323px){
+    #gallery-section-2-div-1-img{
+        width: 280px;
+        height: 250px;
+    }
+}
+
+/* section 3 */
+
+#gallery-section-3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color2);
+}
+
+
+#gallery-section-3-div-1-p-1{
+    font-family: var(--font2);
+font-size: 22px;
+font-weight: 600;
+text-align: center;
+margin-bottom: 0px;
+color: var(--bg-color1);
+}
+
+#gallery-section-3-div-1-p-2{
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;   
+}
+
+#gallery-section-3-div-1-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-section-3-div-1-1-input-1{
+    font-family: var(--font1);
+font-size: 10px;
+font-weight: 600;
+padding: 12px;
+width: 300px;
+border-radius: 30px;
+border: none;
+-webkit-box-shadow: 0px 0px 10px 0px rgba(120,120,120,1);
+-moz-box-shadow: 0px 0px 10px 0px rgba(120,120,120,1);
+box-shadow: 0px 0px 10px 0px rgba(120,120,120,1);
+}
+
+#gallery-section-3-div-1-1-button{
+    background-color: var(--primarycolor);
+    color: var(--text-color1);
+    font-family: var(--font1);
+font-size: 12px;
+font-weight: 700;
+text-align: center;
+border: none;
+padding: 9px;
+border-radius: 30px;
+margin-left: -74px;
 }

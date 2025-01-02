@@ -1,5 +1,6 @@
 import './App.css';
 import About from './Component/About/About';
+import Contact from './Component/Contact/Contact';
 import Gallery from './Component/Gallery/Gallery';
 import Home from './Component/Home/Home';
 import Footer from './Layout/Footer/Footer';
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </Router>

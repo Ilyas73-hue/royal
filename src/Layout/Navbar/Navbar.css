@@ -12,6 +12,19 @@
     --font2: "Heebo", serif;
 }
 
+#navbar{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+@media(max-width: 767px){
+    #navbar{
+        margin-top: 0px;
+    }
+}
+
+/* Section 1 */
 
 #navbar-section-1{
     background-color: var(--bg-color);
@@ -156,3 +169,4 @@ border-radius: 50%;
     }
     
 }
+

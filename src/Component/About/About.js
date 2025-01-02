@@ -104,160 +104,145 @@ function About() {
            </div>
         </section>
 
-      {/* home-section-2 */}
+      {/* about-section-2 */}
 
-      <section  id="home-section-2">
-        {/* section 2 part 1 */}
-        <div className='container' id="home-section-2-div-1">
-            <div id="home-section-2-div-1-1">
+      <section  id="about-section-2">
+  {/* section 2 part 1 */}
+  <div className='container' id="about-section-2-div-1">
+      <div id="about-section-2-div-1-1">
 
-            </div>
-            <div id="home-section-2-div-1-2">
-             <p id="home-section-2-div-1-2-p-1">Order Online</p>
-            </div>
-            <div id="home-section-2-div-1-3">
+      </div>
+      <div id="about-section-2-div-1-2">
+       <p id="about-section-2-div-1-2-p-1">Order Online</p>
+      </div>
+      <div id="about-section-2-div-1-3">
 
-            </div>
-        </div>
-   {/* section 2 part 2 */}
-   <div className='container' id="home-section-2-div-2">
-                <div id="home-section-2-div-2-1">
-                  {
-                    home_sample_card.map((item) => (
-                      <div id="home-section-2-div-2-1-1">
-                      <img id="home-section-2-div-2-1-1-img" src={item.img} alt={item.img} />
-                      <div id="home-section-2-div-2-1-1-order-now">
-                          <button id="home-section-2-div-2-1-1-order-now-button">Order Now</button>
-                      </div>
-                     </div>
-                    ))
-                  }
+      </div>
+  </div>
+{/* section 2 part 2 */}
+<div className='container' id="about-section-2-div-2">
+          <div id="about-section-2-div-2-1">
+            {
+              home_sample_card.map((item) => (
+                <div id="about-section-2-div-2-1-1">
+                <img id="about-section-2-div-2-1-1-img" src={item.img} alt={item.img} />
+                <div id="about-section-2-div-2-1-1-order-now">
+                    <button id="about-section-2-div-2-1-1-order-now-button">Order Now</button>
                 </div>
-        </div>
+               </div>
+              ))
+            }
+          </div>
+  </div>
 
-       </section>
+ </section>
 
-      {/* Home-section-3 */}
+      {/* about-section-3 */}
 
-      <section id="home-section-3"> 
+      <section id="about-section-3"> 
 
-        <div className='container' id="home-section-3-div-1">
-           <div id="home-section-3-div-1-1">
-               <div id="home-section-3-div-1-1-1">
-                    <p id="home-section-3-div-1-1-1-p-1">About Us</p>
-                    <div id="home-section-3-div-1-1-1-line">
+<div className='container' id="about-section-3-div-1">
+   <div id="about-section-3-div-1-1">
+       <div id="about-section-3-div-1-1-1">
+            <p id="about-section-3-div-1-1-1-p-1">About Us</p>
+            <div id="about-section-3-div-1-1-1-line">
 
-                    </div>
-               </div>
-              <div id="home-section-3-div-1-1-2">
-                  <p id="home-section-3-div-1-1-2-p-1">Welcome to Royal Mysore Dosa </p>
-              </div>
-              <div id="home-section-3-div-1-1-3">
-                  <p id="home-section-3-div-1-1-3-p-1">Indian Restaurant in Birmingham is a popular meeting place for those who want to enjoy delicious Indian. Our chefs have years of experience and ensure that each Indian is freshly prepared. We offer a wide variety of Indian. Come by or order for home delivery and savor our tasty Indian</p>
-              </div>
-              <div id="home-section-3-div-1-1-4">
-                  <p id="home-section-3-div-1-1-4-p-1">In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Stpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium.</p>
-              </div>
-              <div id="home-section-3-div-1-1-5">
-               <div id="home-section-3-div-1-1-5-1">
-                <img id="home-section-3-div-1-1-5-1-home-time" src={home_time} alt={home_time} />
-               </div>
-               <div id="home-section-3-div-1-1-5-2">
-                <p id="home-section-3-div-1-1-5-2-p-1">Delivery within 30 minutes</p>
-               </div>
-              </div>
-              <div id="home-section-3-div-1-1-6">
-              <div id="home-section-3-div-1-1-6-1">
-                <img id="home-section-3-div-1-1-6-1-home-time" src={home_offer} alt={home_offer} />
-               </div>
-               <div id="home-section-3-div-1-1-6-2">
-                <p id="home-section-3-div-1-1-6-2-p-1">Best Offer & Prices</p>
-               </div>
-              </div>
-              <div id="home-section-3-div-1-1-7">
-              <div id="home-section-3-div-1-1-7-1">
-                <img id="home-section-3-div-1-1-7-1-home-time" src={home_service} alt={home_service} />
-               </div>
-               <div id="home-section-3-div-1-1-7-2">
-                <p id="home-section-3-div-1-1-7-2-p-1">Online Services Available</p>
-               </div>
-              </div>
-           </div>
-           <div id="home-section-3-div-1-2">
-              <div id="home-section-3-div-1-2-1">
-                 <img id="home-section-3-div-1-2-1-img-1" src={home_about_img_1} alt={home_about_img_1}  />
-              </div>
-              <div id="home-section-3-div-1-2-2">
-              <img id="home-section-3-div-1-2-1-img-1" src={home_about_img_2} alt={home_about_img_2}  />
-              <img id="home-section-3-div-1-2-1-img-1" src={home_about_img_3} alt={home_about_img_3}  />
-              </div>
             </div>
-        </div>
+       </div>
+      <div id="about-section-3-div-1-1-2">
+          <p id="about-section-3-div-1-1-2-p-1">Welcome to Royal Mysore Dosa </p>
+      </div>
+      <div id="about-section-3-div-1-1-3">
+          <p id="about-section-3-div-1-1-3-p-1">Indian Restaurant in Birmingham is a popular meeting place for those who want to enjoy delicious Indian. Our chefs have years of experience and ensure that each Indian is freshly prepared. We offer a wide variety of Indian. Come by or order for home delivery and savor our tasty Indian</p>
+      </div>
+      <div id="about-section-3-div-1-1-4">
+          <p id="about-section-3-div-1-1-4-p-1">In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Stpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium.</p>
+      </div>
+      <div id="about-section-3-div-1-1-5">
+       <div id="about-section-3-div-1-1-5-1">
+        <img id="about-section-3-div-1-1-5-1-home-time" src={home_time} alt={home_time} />
+       </div>
+       <div id="about-section-3-div-1-1-5-2">
+        <p id="about-section-3-div-1-1-5-2-p-1">Delivery within 30 minutes</p>
+       </div>
+      </div>
+      <div id="about-section-3-div-1-1-6">
+      <div id="about-section-3-div-1-1-6-1">
+        <img id="about-section-3-div-1-1-6-1-home-time" src={home_offer} alt={home_offer} />
+       </div>
+       <div id="about-section-3-div-1-1-6-2">
+        <p id="about-section-3-div-1-1-6-2-p-1">Best Offer & Prices</p>
+       </div>
+      </div>
+      <div id="about-section-3-div-1-1-7">
+      <div id="about-section-3-div-1-1-7-1">
+        <img id="about-section-3-div-1-1-7-1-home-time" src={home_service} alt={home_service} />
+       </div>
+       <div id="about-section-3-div-1-1-7-2">
+        <p id="about-section-3-div-1-1-7-2-p-1">Online Services Available</p>
+       </div>
+      </div>
+   </div>
+   <div id="about-section-3-div-1-2">
+      <div id="about-section-3-div-1-2-1">
+         <img id="about-section-3-div-1-2-1-img-1" src={home_about_img_1} alt={home_about_img_1}  />
+      </div>
+      <div id="about-section-3-div-1-2-2">
+      <img id="about-section-3-div-1-2-1-img-1" src={home_about_img_2} alt={home_about_img_2}  />
+      <img id="about-section-3-div-1-2-1-img-1" src={home_about_img_3} alt={home_about_img_3}  />
+      </div>
+    </div>
+</div>
 
-      </section>
+</section>
 
 
-       {/* Home-section-4 */}
-       <section id="home-section-4">
+       {/* about-section-4 */}
+
+
+       <section id="about-section-4">
               
               {/* Part 1 */}
-              <div className='container' id="home-section-4-div-1">
-                <div id="home-section-4-div-1-1-line">
-
+              <div className='container' id="about-section-4-div-1">
+                <div id="about-section-4-div-1-1-line">
+         
                 </div>
-                <div id="home-section-4-div-1-1">
-                  <p id="home-section-4-div-1-1-p-1">Our Services</p>
+                <div id="about-section-4-div-1-1">
+                  <p id="about-section-4-div-1-1-p-1">Our Services</p>
                 </div>
-                <div id="home-section-4-div-1-1-line">
+                <div id="about-section-4-div-1-1-line">
                   
                 </div>
-
+         
               </div>
-
+         
               {/* Part 2 */}
-
-              <div className='container' id="home-section-4-div-2">
+         
+              <div className='container' id="about-section-4-div-2">
                 {
                   home_services_data.map((item) => (
-                    <div id="home-section-4-div-2-1">
-                    <div id="home-section-4-div-2-1-1">
-                       <img id="home-section-4-div-2-1-1-img" src={item.img} alt={item.img} />
+                    <div id="about-section-4-div-2-1">
+                    <div id="about-section-4-div-2-1-1">
+                       <img id="about-section-4-div-2-1-1-img" src={item.img} alt={item.img} />
                     </div>
-                    <div id="home-section-4-div-2-1-2">
-                     <p id="home-section-4-div-2-1-2-p-1">{item.name}</p>
+                    <div id="about-section-4-div-2-1-2">
+                     <p id="about-section-4-div-2-1-2-p-1">{item.name}</p>
                     </div>
-                    <div id="home-section-4-div-2-1-3">
-                       <p id="home-section-4-div-2-1-3-p-1">{item.description}</p>
+                    <div id="about-section-4-div-2-1-3">
+                       <p id="about-section-4-div-2-1-3-p-1">{item.description}</p>
                     </div>
                 </div>
                   ))
                 }
            
               </div>
+         
+         </section>
 
-       </section>
-
-          {/* Home-section-5 */}
-          <section id="home-section-5">
-              {/* Part 1 */}
-
-              <div className='container' id="home-section-5-div-1">
-                <div id="home-section-5-div-1-1">
-
-                </div>
-                <div id="home-section-5-div-1-2">
-                   <p id="home-section-5-div-1-2-p-1"></p>
-                </div>
-                <div id="home-section-5-div-1-3  ">
-
-                </div>
-              </div> 
-
-          </section>
 
           {/* Home-section-7 */}
 
-          <section id="home-section-7">
+          {/* <section id="home-section-7">
               <div className='container' id="home-section-7-div-1">
                   <div id="home-section-7-div-1-line"> 
 
@@ -292,20 +277,21 @@ function About() {
             
              </div>
 
-          </section>
+          </section> */}
 
        {/* Home Section 8 */} 
 
-       <section id="home-section-8">
-            <div className='container' id="home-section-8-div-1">
-             <p id="home-section-8-div-1-p-1"> Subscribe Newsletter </p>
-             <p id="home-section-8-div-1-p-2">Sign up for newsletter to receive special offers and exclusive news about Botanica products</p>
-              <div id="home-section-8-div-1-1">
-                <input id="home-section-8-div-1-1-input-1" type="text"  placeholder='Enter Your Email' />
-                <button id="home-section-8-div-1-1-button">Subscribe</button>
-              </div>
-            </div>
-       </section>
+       
+ <section id="about-section-8">
+ <div className='container' id="about-section-8-div-1">
+  <p id="about-section-8-div-1-p-1"> Subscribe Newsletter </p>
+  <p id="about-section-8-div-1-p-2">Sign up for newsletter to receive special offers and exclusive news about Botanica products</p>
+   <div id="about-section-8-div-1-1">
+     <input id="about-section-8-div-1-1-input-1" type="text"  placeholder='Enter Your Email' />
+     <button id="about-section-8-div-1-1-button">Subscribe</button>
+   </div>
+ </div>
+</section>
 
     </div>
   )

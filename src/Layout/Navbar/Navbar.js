@@ -52,7 +52,7 @@ function Navbar() {
           <a class="nav-link" id="nav-link" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link" href="#">Contact</a>
+          <a class="nav-link" id="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
      <div className='d-flex' id="d-flex">
