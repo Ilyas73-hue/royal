@@ -7,7 +7,12 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 
+
 function Navbar() {
+
+
+   const data = localStorage.getItem("userId")
+
   return (
     <div id="navbar">
        <div id="navbar-section-1">
@@ -46,7 +51,7 @@ function Navbar() {
           <a class="nav-link" id="nav-link" href="/about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link"  href="#">Menu</a>
+          <a class="nav-link" id="nav-link"  href="/menu">Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/gallery">Gallery</a>
@@ -55,10 +60,21 @@ function Navbar() {
           <a class="nav-link" id="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
-     <div className='d-flex' id="d-flex">
-      <a id="d-flex-cart" href="/"><FaShoppingCart id="d-flex-cart-ico" /></a>
-      <a id="d-flex-user" href="/"><FaUser id="d-flex-user-ico" /></a>
-     </div>
+    
+      {
+        data ? (
+          <div className='d-flex' id="d-flex">
+ <a id="d-flex-cart" href="/"><FaShoppingCart id="d-flex-cart-ico" /></a>
+ <a id="d-flex-user" href="/"><FaUser id="d-flex-user-ico" /></a>
+              </div>
+        ) : (
+          <div className='d-flex' id="d-flex">
+                    <button onClick={ () => window.location.href=`/login` } id="navbar-login-button">Login / Register</button>
+              </div>
+        )
+      }
+     
+   
     </div>
   </div>
 </nav>

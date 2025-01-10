@@ -1,7 +1,5 @@
 import React from 'react';
 import "./Home.css";
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 import home_card_img_1 from "../../RoyalAssets/royal_card_img 1.png";
 import home_card_img_2 from "../../RoyalAssets/royal_card_img 2.png";
 import home_card_img_3 from "../../RoyalAssets/royal_card_img 3.png";
@@ -21,8 +19,10 @@ import mark_1 from "../../RoyalAssets/mark_1.png";
 import mark_2 from "../../RoyalAssets/mark_2.png";
 import customer_says from "../../RoyalAssets/customer_says.png";
 
-
 function Home() {
+
+  
+  
 
   const home_sample_card = [{
     id: 1,

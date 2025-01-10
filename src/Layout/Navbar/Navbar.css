@@ -155,6 +155,20 @@ border-radius: 50%;
     margin-top: -2px;
 }
 
+#navbar-login-button{
+    border: none;
+    background-color: var(--primarycolor);
+    color: var(--text-color1);
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
 @media(max-width: 769px){
 
     #navbar-nav{
