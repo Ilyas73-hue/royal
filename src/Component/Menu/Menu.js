@@ -37,35 +37,10 @@ function Menu() {
   
   const data =  await axios.get(`http://localhost:1000/api/menu/get/${id}`)
 
-  setTimeout(console.log("data"), 6000)
-
-
-  console.log("data")
-
-  // setOneData(data.data.menu)
-
-
-  // setTimeout(axios.post(`http://localhost:1000/api/cart/post`, {
-  //   name: onedata.name, price: onedata.price,  img: onedata.img,categories: onedata.categories, description: onedata.description, adminId: onedata.adminId, userId: localStorage.getItem("userId")
-  // }) , 5000)
-
-
  }
-
-//  const cartpost = async(id) => {
-
-//   const post = await axios.post(`http://localhost:1000/api/cart/post`, {
-//     name: onedata.name, price: onedata.price,  img: onedata.img,categories: onedata.categories, description: onedata.description, adminId: onedata.adminId, userId: localStorage.getItem("userId")
-//   })
-
-
-//   setTimeout(post, 3000)
-
-//   console.log(post)
  
-//  }
 
-//  console.log(onedata);
+
 
 
 
