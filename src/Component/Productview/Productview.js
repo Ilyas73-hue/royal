@@ -34,10 +34,11 @@ function Productview() {
       name: getapi.name, price: getapi.price, categories: getapi.categories, qty: qty,img: getapi.img, description: getapi.description, adminId: getapi.adminId, userId: localStorage.getItem("userId")
     })
 
+    localStorage.setItem("adminId", getapi.adminId)
+
     if(data.status === 201){
       window.location.href=`/cart`
     }
-
   }
 
 

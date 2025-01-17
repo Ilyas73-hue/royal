@@ -18,11 +18,13 @@ import Menu from './Component/Menu/Menu';
 import Productview from './Component/Productview/Productview';
 import Cart from './Component/Cart/Cart';
 import Address from './Component/Address/Address';
+import Addressupdate from './Component/Addressupdate/Addressupdate';
 
 
 function App() {
 
   const location  = window.location.pathname;
+  console.log(location.slice(0, 16))
 
   const [one, setOne] = useState();
 
@@ -67,8 +69,11 @@ function App() {
 }
 else if(location === "/address"){
   setOne(true);
+}else if(location.slice(0, 16) === "/address/update/"){
+  setOne(true);
 }
 },[location])
+
 
    
  
@@ -95,6 +100,7 @@ else if(location === "/address"){
           <Route exact path="/menu/view/:id" component={Productview} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/address" component={Address} />
+          <Route exact path="/address/update/:id" component={Addressupdate} />
         </Switch>
         { one && <Footer /> }
       </Router>

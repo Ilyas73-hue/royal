@@ -21,6 +21,7 @@ function Cart() {
        .catch((err) => console.log(err))
       },[]);
 
+
  
       const cartdelete = async(id) => {
      const data = await axios.delete(`http://localhost:1000/api/cart/delete/${id}`)
@@ -28,6 +29,11 @@ function Cart() {
         window.location.href=`/menu`
      }
       }
+
+
+      const userId_filter = cart.filter(item => item.userId.includes(localStorage.getItem("userId")))
+
+      console.log(userId_filter)
 
       const totalAmount = cart.map(item => item.qty  * item.price ).reduce((sum, item ) => sum + item,0);
 
@@ -63,7 +69,7 @@ function Cart() {
                </div>
                <div className='container' id="cart-section-2-div-2"></div>
                {
-                cart.map((item) => (
+                userId_filter.map((item) => (
                     <div className='container' id="cart-section-2-div-3" key={item._id}>
                     <div id="cart-section-2-div-3-1">
                        <div id="cart-section-2-div-3-1-1">
@@ -97,7 +103,7 @@ function Cart() {
           <section id="cart-section-3">
               <div className='container' id="cart-section-3-div-1">
                   <p id="cart-section-3-div-1-p-1">Sub Total: <span id="cart-section-3-div-1-p-1-span">$ {totalAmount}/-</span></p>
-                  <button id="cart-section-3-div-1-button">Confirm & pay</button>
+                  <button onClick={() => window.location.href=`/address`} id="cart-section-3-div-1-button">Confirm & pay</button>
               </div>
           </section>
 
