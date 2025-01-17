@@ -19,13 +19,21 @@
 
 #about{
     padding-top: 11vh;
-}
+ }
 
-@media(max-width: 769px){
+ @media(max-width: 1440px){
+   #about{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
     #about{
         padding-top: 10vh;
     }
-}
+ }
+
+
 
 /* section 1 */
 

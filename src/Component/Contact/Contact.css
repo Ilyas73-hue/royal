@@ -16,17 +16,24 @@
     --font3: "EB Garamond", serif;
 }
 
-
 #contact{
     padding-top: 11vh;
-}
+ }
 
-@media(max-width: 769px){
+ @media(max-width: 1440px){
+   #contact{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
     #contact{
         padding-top: 10vh;
     }
-}
+ }
 
+
+/* section 1 */
 
 #contact-section-1{
     padding-top: 50px;

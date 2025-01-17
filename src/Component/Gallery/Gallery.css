@@ -17,17 +17,25 @@
     --font4: "Outfit", serif;
 }
 
-
 #gallery{
     padding-top: 11vh;
-}
+ }
 
-@media(max-width: 769px){
+ @media(max-width: 1440px){
+   #gallery{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
     #gallery{
         padding-top: 10vh;
     }
-}
+ }
 
+
+
+ /* section 1 */
 
 #gallery-section-1{
     padding-top: 50px;

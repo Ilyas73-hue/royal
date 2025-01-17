@@ -64,7 +64,7 @@ function Navbar() {
       {
         data ? (
           <div className='d-flex' id="d-flex">
- <a id="d-flex-cart" href="/"><FaShoppingCart id="d-flex-cart-ico" /></a>
+ <a id="d-flex-cart" href="/cart"><FaShoppingCart id="d-flex-cart-ico" /></a>
  <a id="d-flex-user" href="/"><FaUser id="d-flex-user-ico" /></a>
               </div>
         ) : (

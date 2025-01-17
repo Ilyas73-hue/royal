@@ -15,6 +15,9 @@ import ProductPost from './Component/Productpost/ProductPost';
 import Product from './Component/Product/Product';
 import Productupdate from './Component/ProductUpdate/Productupdate';
 import Menu from './Component/Menu/Menu';
+import Productview from './Component/Productview/Productview';
+import Cart from './Component/Cart/Cart';
+import Address from './Component/Address/Address';
 
 
 function App() {
@@ -27,6 +30,15 @@ function App() {
       if(location === "/login"){
       setOne(false);
      }else if(location === "/register"){
+      setOne(false);
+    }
+    else if(location === "/admin/product/post"){
+      setOne(false);
+    }
+    else if(location.slice(0, 22) === "/admin/product/update/"){
+      setOne(false);
+    }
+    else if(location === "/admin/product"){
       setOne(false);
     }
     else if(location === "/admin/register"){
@@ -48,8 +60,17 @@ function App() {
     else if(location === "/menu"){
       setOne(true);
     }
-   },[location])
+   else if(location.slice(0, 11) === "/menu/view/"){
+    setOne(true);
+   }else if(location === "/cart"){
+    setOne(true);
+}
+else if(location === "/address"){
+  setOne(true);
+}
+},[location])
 
+   
  
 
 
@@ -71,6 +92,9 @@ function App() {
           <Route exact path="/admin/product/post" component={ProductPost} />
           <Route exact path="/admin/product" component={Product} />
           <Route exact path="/admin/product/update/:id" component={Productupdate} />
+          <Route exact path="/menu/view/:id" component={Productview} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/address" component={Address} />
         </Switch>
         { one && <Footer /> }
       </Router>

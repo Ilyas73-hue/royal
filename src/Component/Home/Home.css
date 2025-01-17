@@ -16,13 +16,20 @@
 
 #home{
     padding-top: 11vh;
-}
+ }
 
-@media(max-width: 769px){
+ @media(max-width: 1440px){
+   #home{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
     #home{
         padding-top: 10vh;
     }
-}
+ }
+
 
 /* Section 1 */
 
