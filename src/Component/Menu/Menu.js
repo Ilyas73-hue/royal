@@ -91,7 +91,7 @@ function Menu() {
                  <img  src={food_icon} alt={food_icon} />
                  <p id={ categoriesdata.toLowerCase() === "special non veg dishes" ? "menu-section-2-div-2-1-2-1-1-p-1-active" : "menu-section-2-div-2-1-2-1-1-p-1"}>Special Non Veg Dishes</p>
                </div>
-             </div> */}
+             </div> 
 
            </div>
            {/* <div id="menu-section-2-div-2-1-3">
