@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --bg-color: rgb(51, 51, 51);
+    --bg-color1: black;
+    --primarycolor: #FFC515;
+    --text-color: #858585;
+    --text-color1: #FFFFFF;
+    --font1: "Nunito", serif;
+    --font2: "Heebo", serif;
+    --font3: "EB Garamond", serif;
+    --font4: "DM Sans", serif;
+    --bg-color-2: #D9D9D999;
+}
+
+
+#order{
+    padding-top: 11vh;
+ }
+
+ @media(max-width: 1440px){
+   #order{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
+    #order{
+        padding-top: 10vh;
+    }
+ }
+ 
+ /* section 1 */
+ 
+ #order-section-1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../../RoyalAssets//nav_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ #order-section-1-div-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ #order-section-1-div-1-p-1{
+    width: 600px;
+    font-family: var(--font1);
+ font-size: 36px;
+ font-weight: 600;
+ line-height: 52.88px;
+ letter-spacing: 0.01em;
+ text-align: center;
+ color: var(--text-color1);
+ }
+ 
+ #order-section-1-div-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #order-section-1-div-2-p-1{
+    font-family: var(--font2);
+ font-size: 26px;
+ font-weight: 700;
+ color: var(--primarycolor);
+ margin-bottom: 0px;
+ }
+ 
+ #order-section-1-div-2-p-2{
+    font-family: var(--font2);
+ font-size: 15px;
+ font-weight: 600;
+ color: var(--text-color1);
+ margin-bottom: 0px;
+ }
+ 
+ @media(max-width: 426px){
+    #order-section-1-div-1-p-1{
+        width: 100%;
+    }
+ }
+
+
+ /* Section 2  */
+
+
+#order-section-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

@@ -59,6 +59,9 @@ function Navbar() {
         <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/contact">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/order">Order</a>
+        </li>
       </ul>
     
       {

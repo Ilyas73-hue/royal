@@ -19,6 +19,7 @@ import Productview from './Component/Productview/Productview';
 import Cart from './Component/Cart/Cart';
 import Address from './Component/Address/Address';
 import Addressupdate from './Component/Addressupdate/Addressupdate';
+import Order from './Component/Order/Order';
 
 
 function App() {
@@ -71,6 +72,8 @@ else if(location === "/address"){
   setOne(true);
 }else if(location.slice(0, 16) === "/address/update/"){
   setOne(true);
+}else if(location === "/order"){
+  setOne(true);
 }
 },[location])
 
@@ -101,6 +104,7 @@ else if(location === "/address"){
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/address" component={Address} />
           <Route exact path="/address/update/:id" component={Addressupdate} />
+          <Route exact path="/order" component={Order} />
         </Switch>
         { one && <Footer /> }
       </Router>
