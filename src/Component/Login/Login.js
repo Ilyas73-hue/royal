@@ -19,6 +19,7 @@ function Login() {
         alert("Login Successfully");
          localStorage.setItem('usertoken', post.data.data);
          localStorage.setItem('userId', post.data.user._id);
+         localStorage.setItem("username", post.data.user.username)
         window.location.href="/"
      }else{
         alert(post.message)
