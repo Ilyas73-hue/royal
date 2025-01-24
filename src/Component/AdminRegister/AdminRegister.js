@@ -40,7 +40,7 @@ function AdminRegister() {
                 Submit
             </button>
             <p>(or)</p>
-            <p> Already Register? <a href="/login">Login</a> </p>
+            <p id="Admin-register-1-p-a-href"> Already Register? <a id="Admin-register-1-p-a-href-1" href="/admin/login">Login</a> </p>
             </form>
        </div> 
     </div>

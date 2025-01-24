@@ -20,6 +20,19 @@ function Order() {
 
   console.log(order)
 
+  const cancelOrder = async(id) =>{
+   
+    const update = await axios.patch(url+`/api/order/update/${id}`, {
+        status: "Cancel Order"
+    }
+    )
+
+    if(update.status === 200){
+      window.location.reload()
+    }
+
+  } 
+
   return (
     <div id="order">
             {/* Section 1 */}
@@ -44,9 +57,6 @@ function Order() {
         {
           order.map((item) => (
             <div  id="order-section-2-div-2-1" key={item._id}>
-            {/* <div id="order-section-2-div-2-1-1">
-             <FaBox id="order-section-2-div-2-1-1-icon" />
-            </div> */}
             {
               item.product.map((data) => (
             <div id="order-section-2-div-2-1-2">
@@ -65,6 +75,9 @@ function Order() {
             </div>
             <div id="order-section-2-div-2-1-5">
              <button onClick={() => window.location.href=`/orderview/${item._id}`} id="order-section-2-div-2-1-5-button">Track</button>
+            </div>
+            <div id="order-section-2-div-2-1-5">
+             <button onClick={() => cancelOrder(`${item._id}`)} id="order-section-2-div-2-1-5-button">Cancel Order</button>
             </div>
           </div>
           ))

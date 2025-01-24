@@ -30,6 +30,7 @@ function Register() {
 
   return (
     <div id="register">
+      <h6 id="register-h6-1">Welcome, <span id="register-h6-1-span">Royal Mysore Dosa</span></h6>
        <div id="register-1">
               <h6 id="register-1-h6-1">Register</h6>
             <form onSubmit={data} id="register-form-1">
@@ -40,7 +41,7 @@ function Register() {
                 Submit
             </button>
             <p>(or)</p>
-            <p> Already Register? <a href="/login">Login</a> </p>
+            <p id="register-form-1-p-1"> Already Register? <a id="register-form-1-p-1-a-href" href="/login">Login</a> </p>
             </form>
        </div> 
     </div>

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root{
     --bg-color: rgb(51, 51, 51);
@@ -12,6 +13,8 @@
     --font1: "Nunito", serif;
     --font2: "Heebo", serif;
     --font3: "EB Garamond", serif;
+    --font4: "DM Sans", serif;
+    --bg-color-2: #D9D9D999;
 }
 
 
@@ -26,7 +29,7 @@
   #Admin-register-1{
     border-radius: 2px;
     padding: 20px;
-    width: 300px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +37,8 @@
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   }
+
+
   
   
   #Admin-register-form-1{
@@ -44,43 +49,65 @@
     gap: 10px;
   }
   
+  #Admin-register-1-h6-1{
+    font-family: var(--font2);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primarycolor);
+  }
   
   #Admin-register-form-input-1{
     margin-top: 10px;
-    width: 100%;
+    width: 500px;
     font-family: var(--font3);
-    padding: 5px;
-  font-size: 15px;
-  font-weight: 600;
+    padding: 10px;
+font-size: 15px;
+font-weight: 600;
+border-radius: 30px;
   }
   
   #Admin-register-form-input-2{
-    padding: 5px;
     margin-top: 10px;
-    width: 100%;
+    width: 500px;
     font-family: var(--font3);
-  font-size: 15px;
-  font-weight: 600;
+    padding: 10px;
+font-size: 15px;
+font-weight: 600;
+border-radius: 30px;
   }
   
   #Admin-register-form-input-3{
-  padding: 5px;
     margin-top: 10px;
-    width: 100%;
+    width: 500px;
     font-family: var(--font3);
-  font-size: 15px;
-  font-weight: 600;
+    padding: 10px;
+font-size: 15px;
+font-weight: 600;
+border-radius: 30px;
   }
   
   #Admin-register-form-1-button{
     margin-top: 10px;
     border: none;
     background-color: var(--primarycolor);
+    color: var(--bg-color1);
+    font-family: var(--font2);
+font-size: 18px;
+font-weight: 600;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
   }
   
-  #Admin-register-1-h6-1{
-    font-family: var(--font3);
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0px;
-  }
+#Admin-register-1-p-a-href{
+  font-family: var(--font2);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--bg-color1);
+}
+
+
+#Admin-register-1-p-a-href-1{
+  color: var(--primarycolor);
+}
