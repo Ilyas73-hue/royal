@@ -21,12 +21,14 @@ import Address from './Component/Address/Address';
 import Addressupdate from './Component/Addressupdate/Addressupdate';
 import Order from './Component/Order/Order';
 import Orderview from './Component/Orderview/Orderview';
+import Adminnavbar from './Component/Adminnavbar/Adminnavbar';
+import Adminorder from './Component/Adminorder/Adminorder';
 
 
 function App() {
 
   const location  = window.location.pathname;
-  console.log("/orderview/".length)
+  // console.log("/orderview/".length)
 
   const [one, setOne] = useState();
 
@@ -81,8 +83,22 @@ else if(location === "/address"){
 },[location])
 
 
+
+  const [two, setTwo] = useState();
+
+  useEffect(() => {
+   if(location === "/admin/product/post"){
+    setTwo(true)
+   }else if(location === "/admin/product"){
+    setTwo(true)
+   }else if(location.slice(0, 22) === "/admin/product/update/"){
+    setTwo(true)
+   }else if(location === "/admin/order"){
+    setTwo(true)
+   }
+  },[location])
    
- 
+
 
 
 
@@ -90,6 +106,7 @@ else if(location === "/address"){
     <div className="App">
       <Router>
       { one && <Navbar /> }
+      { two && <Adminnavbar /> }
         <Switch>
           <Route exact path="/register" component={Register} />
           <Route exact path="/" component={Home} />
@@ -109,6 +126,7 @@ else if(location === "/address"){
           <Route exact path="/address/update/:id" component={Addressupdate} />
           <Route exact path="/order" component={Order} />
           <Route exact path="/orderview/:id" component={Orderview} />
+          <Route exact path="/admin/order" component={Adminorder} />
         </Switch>
         { one && <Footer /> }
       </Router>

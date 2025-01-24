@@ -42,7 +42,7 @@ function AdminLogin() {
                 Submit
             </button>
             <p>(or)</p>
-            <p> Don't Register? <a href="/register">Register</a> </p>
+            <p id="Admin-login-form-1-p-a-href"> Don't Register? <a id="Admin-login-form-1-p-a-href-1" href="/admin/register">Register</a> </p>
             </form>
        </div> 
     </div>

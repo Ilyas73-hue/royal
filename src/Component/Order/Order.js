@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Order.css';
-import { FaBox } from "react-icons/fa";
 import axios from "axios";
 import { IoMdClose } from "react-icons/io";
 

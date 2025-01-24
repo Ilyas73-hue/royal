@@ -55,7 +55,14 @@ const setFileToBase = (file) =>{
         name, price, img,categories,description, adminId: localStorage.getItem("adminId")
      })
 
-     console.log(post)
+     if(post.status === 201){
+      alert("Product Post Successfully...");
+      window.location.reload();
+     }else if(post.status === 400){
+      alert("please Check Internet");
+      window.location.reload();
+     }
+
 
    }
 
@@ -76,7 +83,7 @@ const setFileToBase = (file) =>{
                }
              </select>
              <textarea id="product-post-1-form-input-5" value={description} onChange={(e) => setDescription(e.target.value)} type="text" placeholder='Enter Description' required></textarea>
-            <button type="submit">Submit</button>
+            <button id="product-post-1-form-submit" type="submit">Submit</button>
            </form>
 
         </div>
