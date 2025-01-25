@@ -35,7 +35,10 @@ const Adminnavbar = () => {
           <a class="nav-link" id="nav-link" href="/admin/order">Order</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link" href="/contact">Cancel Order</a>
+          <a class="nav-link" id="nav-link" href="/admin/delivery/order">Delivery Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link" href="/admin/cancel/order">Cancel Order</a>
         </li>
       </ul>
     

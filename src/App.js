@@ -23,6 +23,9 @@ import Order from './Component/Order/Order';
 import Orderview from './Component/Orderview/Orderview';
 import Adminnavbar from './Component/Adminnavbar/Adminnavbar';
 import Adminorder from './Component/Adminorder/Adminorder';
+import Deliveryorder from './Component/Deliveryorder/Deliveryorder';
+import Cancelorder from './Component/Cancelorder/Cancelorder';
+
 
 
 function App() {
@@ -95,6 +98,10 @@ else if(location === "/address"){
     setTwo(true)
    }else if(location === "/admin/order"){
     setTwo(true)
+   }else if(location === "/admin/delivery/order"){
+    setTwo(true)
+   }else if(location === "/admin/cancel/order"){
+    setTwo(true)
    }
   },[location])
    
@@ -127,6 +134,8 @@ else if(location === "/address"){
           <Route exact path="/order" component={Order} />
           <Route exact path="/orderview/:id" component={Orderview} />
           <Route exact path="/admin/order" component={Adminorder} />
+          <Route exact path="/admin/delivery/order" component={Deliveryorder} />
+          <Route exact path="/admin/cancel/order" component={Cancelorder} />
         </Switch>
         { one && <Footer /> }
       </Router>
