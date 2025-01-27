@@ -26,10 +26,16 @@
       padding-top: 9vh;
    }
  }
+
+ @media(max-width: 1280px){
+   #cart{
+      padding-top: 7vh;
+   }
+ }
  
  @media(max-width: 769px){
     #cart{
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
  }
 
