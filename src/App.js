@@ -25,6 +25,8 @@ import Adminnavbar from './Component/Adminnavbar/Adminnavbar';
 import Adminorder from './Component/Adminorder/Adminorder';
 import Deliveryorder from './Component/Deliveryorder/Deliveryorder';
 import Cancelorder from './Component/Cancelorder/Cancelorder';
+import Adminorderview from './Component/Adminorderview/Adminorderview';
+import Adminhome from './Component/Adminhome/Adminhome';
 
 
 
@@ -32,6 +34,8 @@ function App() {
 
   const location  = window.location.pathname;
   // console.log("/orderview/".length)
+
+  console.log('/admin/order/view/'.length)
 
   const [one, setOne] = useState();
 
@@ -102,6 +106,10 @@ else if(location === "/address"){
     setTwo(true)
    }else if(location === "/admin/cancel/order"){
     setTwo(true)
+   }else if(location.slice(0, 18) === "/admin/order/view/"){
+    setTwo(true)
+   }else if(location === "/admin/home"){
+    setTwo(true)
    }
   },[location])
    
@@ -136,6 +144,8 @@ else if(location === "/address"){
           <Route exact path="/admin/order" component={Adminorder} />
           <Route exact path="/admin/delivery/order" component={Deliveryorder} />
           <Route exact path="/admin/cancel/order" component={Cancelorder} />
+          <Route exact path="/admin/order/view/:id" component={Adminorderview} />
+          <Route exact path="/admin/home" component={Adminhome} />
         </Switch>
         { one && <Footer /> }
       </Router>

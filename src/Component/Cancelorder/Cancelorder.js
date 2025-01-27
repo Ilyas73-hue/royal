@@ -58,6 +58,9 @@ function Cancelorder() {
                                <div id="cancelorder-div-1-1-4">
                                <p id="cancelorder-div-1-1-4-p-1">{item.name}</p>
                                </div>
+                               <div id="cancelorder-div-1-1-5">
+                              <button onClick={() => window.location.href=`/admin/order/view/${item._id}`} id="cancelorder-div-1-1-5-button">View</button>
+                               </div>
                             </div>
                         ))
                       }

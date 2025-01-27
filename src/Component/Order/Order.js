@@ -56,27 +56,23 @@ function Order() {
         {
           order.map((item) => (
             <div  id="order-section-2-div-2-1" key={item._id}>
+              <div id="order-section-2-div-2-1-2">
             {
               item.product.map((data) => (
-            <div id="order-section-2-div-2-1-2">
-              <p id="order-section-2-div-2-1-2-p-1">{data.name} <IoMdClose />  {data.qty}</p>
-            </div>
+            
+              <p id="order-section-2-div-2-1-2-p-1">{data.name} <IoMdClose /> {data.qty}</p>
+           
               ))
             }
+             </div>
             <div id="order-section-2-div-2-1-3">
              <p id="order-section-2-div-2-1-3-p-1">$ {item.totalAmount}</p>
             </div>
             <div id="order-section-2-div-2-1-3">
              <p id="order-section-2-div-2-1-3-p-1">Items:  {item.product.length}</p>
             </div>
-            <div id="order-section-2-div-2-1-4">
-             <p id="order-section-2-div-2-1-4-p-1">{item.status}</p>
-            </div>
             <div id="order-section-2-div-2-1-5">
-             <button onClick={() => window.location.href=`/orderview/${item._id}`} id="order-section-2-div-2-1-5-button">Track</button>
-            </div>
-            <div id="order-section-2-div-2-1-5">
-             <button onClick={() => cancelOrder(`${item._id}`)} id="order-section-2-div-2-1-5-button">Cancel Order</button>
+             <button onClick={() => window.location.href=`/orderview/${item._id}`} id="order-section-2-div-2-1-5-button">View</button>
             </div>
           </div>
           ))

@@ -23,7 +23,7 @@ const Adminnavbar = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" id="nav-link"  href="/">Home</a>
+          <a class="nav-link" id="nav-link"  href="/admin/home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/admin/product/post">Product Post</a>

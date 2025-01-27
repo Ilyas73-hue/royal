@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --bg-color: rgb(51, 51, 51);
+    --bg-color1: black;
+    --primarycolor: #FFC515;
+    --text-color: #858585;
+    --text-color1: #FFFFFF;
+    --font1: "Nunito", serif;
+    --font2: "Heebo", serif;
+    --font3: "EB Garamond", serif;
+    --font4: "DM Sans", serif;
+    --bg-color-2: #D9D9D999;
+}
+
+
+
+#adminorderview{
+    padding-top: 11vh;
+ }
+
+ @media(max-width: 1440px){
+   #adminorderview{
+      padding-top: 9vh;
+   }
+ }
+ 
+ @media(max-width: 769px){
+    #adminorderview{
+        padding-top: 10vh;
+    }
+ }
+
+
+ #adminorderview-section-1-back{
+    margin-top: 20px;
+    border: none;
+    background-color: var(--primarycolor);
+    color: var(--text-color1);
+    font-family: var(--font1);
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+ }
+
+ #adminorderview-section-1-div-1-1{
+    background-color: var(--text-color1);
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+ }
+
+ #adminorderview-section-1-div-1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+ }
+
+ #adminorderview-section-1-div-1-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+ }
+
+ #adminorderview-section-1-div-1-1-1-img{
+    width: 130px;
+    padding: 10px;
+ }
+
+ #adminorderview-section-1-div-1-1-2-p-1{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+ }
+
+ #adminorderview-section-1-div-1-1-2-p-2{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+ }
+
+  #adminorderview-section-1-div-1-1-2-p-2-span{
+    color: var(--primarycolor);
+  }
+
+
+/* part 2 */
+
+
+#adminorderview-section-1-div-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+#adminorderview-section-1-div-2-1{
+    background-color: var(--text-color1);
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+padding: 20px;
+}
+
+#adminorderview-section-1-div-2-1-p-1{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+}
+
+#adminorderview-section-1-div-2-1-p-1-span{
+    color: var(--primarycolor);
+}
+
+#adminorderview-section-1-div-2-1-p-2{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+}
+
+#adminorderview-section-1-div-2-1-p-2-span{
+    color: var(--primarycolor);
+}
+
+#adminorderview-section-1-div-2-1-p-3{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+}
+
+#adminorderview-section-1-div-2-1-p-3-span{
+    color: var(--primarycolor);
+}
+
+#adminorderview-section-1-div-2-1-p-4{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#adminorderview-section-1-div-2-1-p-4-span{
+    color: var(--primarycolor);
+}
+
+#adminorderview-section-1-div-2-2{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#adminorderview-section-1-div-2-2-1{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+    box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+}
+
+#adminorderview-section-1-div-2-2-1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#adminorderview-section-1-div-2-2-1-p-1{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#adminorderview-section-1-div-2-2-1-p-1-span{
+    color: var(--primarycolor);
+}
+
+
+#adminorderview-section-1-div-2-2-1-p-2{
+    font-family: var(--font1);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-color1);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#adminorderview-section-1-div-2-2-1-p-2-span{
+    color: var(--primarycolor);
+}
+
+
+#adminorderview-section-1-div-2-2-2{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(184,184,184,1);
+    box-shadow: 0px 0px 5px 0px rgba(184,184,184,1); 
+    padding: 20px;
+}

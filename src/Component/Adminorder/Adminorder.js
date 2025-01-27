@@ -91,6 +91,9 @@ function Adminorder() {
                    <div id="adminorder-div-1-1-6">
                      <button id="adminorder-div-1-1-6-button" onClick={() => status(`${item._id}`)}>Update</button>
                    </div>
+                   <div id="adminorder-div-1-1-6">
+                     <button id="adminorder-div-1-1-6-button" onClick={() => window.location.href=`/admin/order/view/${item._id}`} >View</button>
+                   </div>
                 </div>
             ))
           }
