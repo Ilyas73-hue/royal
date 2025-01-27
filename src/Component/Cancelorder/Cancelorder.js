@@ -7,14 +7,14 @@ function Cancelorder() {
 
   const url = `http://localhost:1000`;
 
-    const adminId = localStorage.getItem("adminId");
+  const adminId = localStorage.getItem("adminId");
 
- const [cancelorder, setcancelorder] = useState([]);
-
-
+  const [cancelorder, setcancelorder] = useState([]);
 
 
- useEffect(() => {
+
+
+  useEffect(() => {
      axios.get(url+`/api/order/get/`)
   .then((res) => setcancelorder(res.data.as))
   }, []);

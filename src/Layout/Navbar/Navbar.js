@@ -11,7 +11,14 @@ import { IoIosMenu } from "react-icons/io";
 function Navbar() {
 
 
-   const data = localStorage.getItem("userId")
+   const data = localStorage.getItem("userId");
+
+   const logout = () => {
+    localStorage.removeItem('usertoken');
+    localStorage.removeItem('userId');
+    localStorage.removeItem("username")
+    window.location.href=`/`
+   }
 
   return (
     <div id="navbar">
@@ -58,16 +65,23 @@ function Navbar() {
         <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/contact">Contact</a>
         </li>
-        <li class="nav-item">
+        {
+          data &&  <li class="nav-item">
           <a class="nav-link" id="nav-link" href="/order">Order</a>
-        </li>
+          </li>
+        }
+       
       </ul>
     
       {
         data ? (
           <div className='d-flex' id="d-flex">
- <a id="d-flex-cart" href="/cart"><FaShoppingCart id="d-flex-cart-ico" /></a>
- <a id="d-flex-user" href="/"><FaUser id="d-flex-user-ico" /></a>
+            <div>
+            <a id="d-flex-cart" href="/cart"><FaShoppingCart id="d-flex-cart-ico" /></a>
+            </div>
+<div>
+<button onClick={logout} id="navbar-login-button">Logout</button>
+</div>
               </div>
         ) : (
           <div className='d-flex' id="d-flex">

@@ -108,3 +108,95 @@ padding-right: 20px;
 #Admin-login-form-1-p-a-href-1{
   color: var(--primarycolor);
 }
+
+
+@media(max-width: 650px){
+  #Admin-login-1{
+    width: 500px;
+  }
+
+  #Admin-login-form-input-1{
+    width: 400px;
+  }
+  
+  #Admin-login-form-input-2{
+    width: 400px;
+  }
+  
+  #Admin-login-form-input-3{
+    width: 400px;
+  }
+
+}
+
+@media(max-width: 550px){
+  #Admin-login-1{
+    width: 400px;
+  }
+
+  #Admin-login-form-input-1{
+    width: 300px;
+  }
+  
+  #Admin-login-form-input-2{
+    width: 300px;
+  }
+  
+  #Admin-login-form-input-3{
+    width: 300px;
+  }
+
+}
+
+@media(max-width: 450px){
+  #Admin-login-1{
+    width: 300px;
+  }
+
+  #Admin-login-form-input-1{
+    width: 200px;
+  }
+  
+  #Admin-login-form-input-2{
+    width: 200px;
+  }
+  
+  #Admin-login-form-input-3{
+    width: 200px;
+  }
+
+#Admin-login-h6-1 {
+    font-family: var(--font2);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bg-color1);
+}
+
+}
+
+@media(max-width: 350px){
+  #Admin-login-1{
+    width: 280px;
+  }
+
+  #Admin-login-form-input-1{
+    width: 200px;
+  }
+  
+  #Admin-login-form-input-2{
+    width: 200px;
+  }
+  
+  #Admin-login-form-input-3{
+    width: 200px;
+  }
+
+#Admin-login-h6-1 {
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bg-color1);
+}
+
+}
+

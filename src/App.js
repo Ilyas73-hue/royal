@@ -27,6 +27,7 @@ import Deliveryorder from './Component/Deliveryorder/Deliveryorder';
 import Cancelorder from './Component/Cancelorder/Cancelorder';
 import Adminorderview from './Component/Adminorderview/Adminorderview';
 import Adminhome from './Component/Adminhome/Adminhome';
+import AdminScreen from './adminScreen';
 
 
 
@@ -111,6 +112,12 @@ else if(location === "/address"){
    }else if(location === "/admin/home"){
     setTwo(true)
    }
+   else if(location === "/admin/register"){
+    setTwo(false)
+   }
+   else if(location === "/admin/login"){
+    setTwo(false)
+   }
   },[location])
    
 
@@ -130,22 +137,22 @@ else if(location === "/address"){
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/admin/register" component={AdminRegister} />
-          <Route exact path="/admin/login" component={AdminLogin} />
-          <Route exact path="/admin/product/post" component={ProductPost} />
-          <Route exact path="/admin/product" component={Product} />
-          <Route exact path="/admin/product/update/:id" component={Productupdate} />
-          <Route exact path="/menu/view/:id" component={Productview} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/address" component={Address} />
           <Route exact path="/address/update/:id" component={Addressupdate} />
           <Route exact path="/order" component={Order} />
           <Route exact path="/orderview/:id" component={Orderview} />
-          <Route exact path="/admin/order" component={Adminorder} />
-          <Route exact path="/admin/delivery/order" component={Deliveryorder} />
-          <Route exact path="/admin/cancel/order" component={Cancelorder} />
-          <Route exact path="/admin/order/view/:id" component={Adminorderview} />
-          <Route exact path="/admin/home" component={Adminhome} />
+          <Route exact path="/admin/register" component={AdminRegister} />
+          <Route exact path="/admin/login" component={AdminLogin} />
+          <AdminScreen exact path="/admin/product/post" component={ProductPost} />
+          <AdminScreen exact path="/admin/product" component={Product} />
+          <AdminScreen exact path="/admin/product/update/:id" component={Productupdate} />
+          <AdminScreen exact path="/menu/view/:id" component={Productview} />
+          <AdminScreen exact path="/admin/order" component={Adminorder} />
+          <AdminScreen exact path="/admin/delivery/order" component={Deliveryorder} />
+          <AdminScreen exact path="/admin/cancel/order" component={Cancelorder} />
+          <AdminScreen exact path="/admin/order/view/:id" component={Adminorderview} />
+          <AdminScreen exact path="/admin/home" component={Adminhome} />
         </Switch>
         { one && <Footer /> }
       </Router>

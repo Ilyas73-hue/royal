@@ -20,19 +20,24 @@
 #gallery{
     padding-top: 11vh;
  }
-
+ 
  @media(max-width: 1440px){
    #gallery{
       padding-top: 9vh;
    }
  }
  
+ @media(max-width: 1280px){
+   #gallery{
+      padding-top: 7vh;
+   }
+ }
+ 
  @media(max-width: 769px){
     #gallery{
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
  }
-
 
 
  /* section 1 */

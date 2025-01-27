@@ -250,6 +250,34 @@ function Home() {
               </div>
 
        </section>
+
+  {/* Section 5 */}
+
+{/* <section id="home-section-5">
+  <div className='container' id="home-section-5-div-1">
+      <div id="home-section-5-div-1-1">
+  
+      </div>
+      <div id="home-section-5-div-1-2">
+      <p id="home-section-5-div-1-2-p-1">Our Menu</p>
+      </div>
+      <div id="home-section-5-div-1-3">
+
+      </div>
+  </div>
+
+  <div id="home-section-5-div-2">
+
+  </div>
+
+</section>
+
+
+   {/* Section 6 */}
+
+       {/* <section id="home-section-6">
+
+       </section> */}
       
 
             {/* Home-section-7 */}
@@ -303,6 +331,8 @@ function Home() {
               </div>
             </div>
        </section>
+
+
 
 
 

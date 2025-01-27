@@ -98,7 +98,7 @@ const setFileToBase = (file) =>{
                }
              </select>
              <textarea id="product-post-1-form-input-5" value={tempData && tempData.description} onChange={(e) => setTempData({ ...tempData, description: e.target.value })} type="text" placeholder='Enter Description' required></textarea>
-            <button type="submit">Submit</button>
+            <button id="product-post-1-form-submit" type="submit">Submit</button>
            </form>
 
         </div>

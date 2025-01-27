@@ -36,9 +36,26 @@
 
 
  #adminhome-section-1{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+   height: 30vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
     gap: 30px;
+ }
+
+
+ @media(max-width: 1440px){
+   #adminhome-section-1{
+      height: 10vh;
+   }
+ }
+
+ @media(max-width: 600px){
+   #adminhome-section-1{
+  margin-top: 30px;
+   }
  }
  
  #adminhome-section-1-div-1{

@@ -127,3 +127,17 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
    padding-right: 10px;
    border-radius: 2px;
  }
+
+ @media(max-width: 550px){
+   #Deliveryorder-div-1-1{
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #Deliveryorder-div-1{
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   }
+ }

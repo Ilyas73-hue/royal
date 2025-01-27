@@ -10,6 +10,9 @@ function Menu() {
 
     console.log(categoriesdata);
 
+
+    const userId = localStorage.getItem("userId");
+
     const categories = [{
       name:"Desi Breakfast"
     }, {
@@ -26,9 +29,11 @@ function Menu() {
           .catch((err) => console.log(err))
          },[]);
 
+        
 
 
 
+console.log(categoriesdata)
 
 
  const Filter = (event) => {
@@ -93,12 +98,12 @@ function Menu() {
              </div> 
 
            </div>
-           {/* <div id="menu-section-2-div-2-1-3">
-           <select id="menu-section-2-div-2-1-3-1-1-p-1-active" onChange={(e) => setCategoriesdata(e.target.value)}>
+           <div id="menu-section-2-div-2-1-3">
+           <select id="menu-section-2-div-2-1-3-1-1-p-1-active" onChange={(e) => Filter(e.target.value)}>
   <option  id={ categoriesdata === "Desi breakfast" ? "menu-section-2-div-2-1-2-1-1-p-1-active" : "menu-section-2-div-2-1-2-1-1-p-1"} value="Desi breakfast">Desi breakfast</option>
-  <option id={ categoriesdata === "Super Deals" ? "menu-section-2-div-2-1-2-1-1-p-1-active" : "menu-section-2-div-2-1-2-1-1-p-1"} value="Super Deals">Super Deals</option>
+  <option id={ categoriesdata === "Special Non Veg Dishes" ? "menu-section-2-div-2-1-2-1-1-p-1-active" : "menu-section-2-div-2-1-2-1-1-p-1"} value="Special Non Veg Dishes">Special Non Veg Dishes</option>
 </select>
-           </div> */}
+           </div>
          </div>
          <div id="menu-section-2-div-2-2">
 
@@ -120,7 +125,7 @@ function Menu() {
                      <p id="menu-section-2-div-2-2-1-card-1-3-p-1">{item.description}</p>
                     </div>
                     <div id="menu-section-2-div-2-2-1-card-1-4">
-                       <button id="menu-section-2-div-2-2-1-card-1-4-button" onClick={() => window.location.href=`/menu/view/${item._id}`}>Order Now</button>
+                       <button id="menu-section-2-div-2-2-1-card-1-4-button" onClick={() =>{ userId ? ( window.location.href=`/menu/view/${item._id}` ) : ( window.location.href=`/login` ) } }>Order Now</button>
                     </div>
                 </div>
                    ))

@@ -26,7 +26,7 @@ function Adminorderview() {
   return (
     <div id="adminorderview">
         <section className='container' id="adminorderview-section-1">
-            <button id="adminorderview-section-1-back">Back</button>
+            <button id="adminorderview-section-1-back" onClick={() => window.location.href=`/admin/order`}>Back</button>
              <div id="adminorderview-section-1-div-1">
                  {
                   adminorderview && adminorderview.product.map((item) => (

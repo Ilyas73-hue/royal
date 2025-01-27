@@ -19,7 +19,7 @@ function AdminLogin() {
         localStorage.setItem("token",post.data.data);
         localStorage.setItem("adminId",post.data.admin._id);
           alert(post.data.message)
-          window.location.href="/admin/product/post"
+          window.location.href="/admin/home"
        }else{
           alert(post.message)
        }

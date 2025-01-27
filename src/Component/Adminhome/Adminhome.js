@@ -25,12 +25,15 @@ function Adminhome() {
 
     const order_filter = order.filter((item) => item.adminId === adminId);
 
-    const cancel_order = order_filter.map((item) => item.status === "Cancel Order")
+    const cancel_order = order_filter.map((item) => item.status === "Cancel Order");
 
-    const pending_order = order_filter.map((item) => item.status === "pending")
+    const totalAmount = order_filter.map(item => item.totalAmount);
 
+    const sum_total = totalAmount.map((item) => parseInt(item)).reduce((sum, item) => sum + item,0);
 
-  console.log(cancel_order.length)
+console.log(sum_total)
+
+  console.log(totalAmount)
 
   return (
     <div id="adminhome">
@@ -43,14 +46,10 @@ function Adminhome() {
            <p id="adminhome-section-1-div-1-p-1">Total Orders</p>
            <p id="adminhome-section-1-div-1-p-2">{order_filter && order_filter.length}</p>
          </div>
-         {/* <div id="adminhome-section-1-div-1">
-           <p id="adminhome-section-1-div-1-p-1">Cancel Order</p>
-           <p id="adminhome-section-1-div-1-p-2">{cancel_order && cancel_order.length}</p>
-         </div>
          <div id="adminhome-section-1-div-1">
-           <p id="adminhome-section-1-div-1-p-1">Pending Order</p>
-           <p id="adminhome-section-1-div-1-p-2">{pending_order && pending_order.length}</p>
-         </div> */}
+           <p id="adminhome-section-1-div-1-p-1">Total Amount</p>
+           <p id="adminhome-section-1-div-1-p-2">$ {sum_total}/-</p>
+         </div>
       </section>
     </div>
   )

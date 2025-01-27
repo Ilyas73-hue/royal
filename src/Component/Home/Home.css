@@ -17,16 +17,22 @@
 #home{
     padding-top: 11vh;
  }
-
+ 
  @media(max-width: 1440px){
    #home{
       padding-top: 9vh;
    }
  }
  
+ @media(max-width: 1280px){
+   #home{
+      padding-top: 7vh;
+   }
+ }
+ 
  @media(max-width: 769px){
     #home{
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
  }
 
@@ -497,6 +503,53 @@ color: var(--bg-color1);
 }
 
 
+/* Section 5 */
+
+#home-section-5{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#home-section-5-div-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#home-section-5-div-1-1{
+    width: 100px;
+    height: 2px;
+    background-color: var(--primarycolor);
+}
+
+#home-section-5-div-1-2-p-1{
+    font-family: var(--font3);
+font-size: 24px;
+font-weight: 700;
+color: var(--bg-color1);
+margin-bottom: 0px;
+}
+
+#home-section-5-div-1-3{
+    width: 100px;
+    height: 2px;
+    background-color: var(--primarycolor);
+}
+
+
+/* Section 6 */
+
+#home-section-6{
+    width: 100%;
+    background-image: url("../../RoyalAssets//royal_form_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
  
 /* Section 7 */
 

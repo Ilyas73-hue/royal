@@ -20,19 +20,24 @@
 #about{
     padding-top: 11vh;
  }
-
+ 
  @media(max-width: 1440px){
    #about{
       padding-top: 9vh;
    }
  }
  
+ @media(max-width: 1280px){
+   #about{
+      padding-top: 7vh;
+   }
+ }
+ 
  @media(max-width: 769px){
     #about{
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
  }
-
 
 
 /* section 1 */

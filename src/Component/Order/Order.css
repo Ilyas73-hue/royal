@@ -26,10 +26,16 @@
       padding-top: 9vh;
    }
  }
+
+ @media(max-width: 1280px){
+   #order{
+      padding-top: 7vh;
+   }
+ }
  
  @media(max-width: 769px){
     #order{
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
  }
  
@@ -173,4 +179,12 @@ color: var(--bg-color1);
    padding-bottom: 10px;
    padding-right: 20px;
    padding-left: 20px;
+}
+
+@media(max-width: 425px){
+   #order-section-2-div-2-1{
+      flex-direction: column;
+      width: 300px;
+      gap: 10px;
+   }
 }
