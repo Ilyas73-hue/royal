@@ -36,7 +36,7 @@ function App() {
   const location  = window.location.pathname;
   // console.log("/orderview/".length)
 
-  console.log('/admin/order/view/'.length)
+
 
   const [one, setOne] = useState();
 
@@ -142,12 +142,12 @@ else if(location === "/address"){
           <Route exact path="/address/update/:id" component={Addressupdate} />
           <Route exact path="/order" component={Order} />
           <Route exact path="/orderview/:id" component={Orderview} />
+          <Route exact path="/menu/view/:id" component={Productview} />
           <Route exact path="/admin/register" component={AdminRegister} />
           <Route exact path="/admin/login" component={AdminLogin} />
           <AdminScreen exact path="/admin/product/post" component={ProductPost} />
           <AdminScreen exact path="/admin/product" component={Product} />
           <AdminScreen exact path="/admin/product/update/:id" component={Productupdate} />
-          <AdminScreen exact path="/menu/view/:id" component={Productview} />
           <AdminScreen exact path="/admin/order" component={Adminorder} />
           <AdminScreen exact path="/admin/delivery/order" component={Deliveryorder} />
           <AdminScreen exact path="/admin/cancel/order" component={Cancelorder} />

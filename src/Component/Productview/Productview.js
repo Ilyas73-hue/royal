@@ -21,8 +21,10 @@ function Productview() {
 
   const {id} = useParams();
 
+  const url = "https://royal-backend-1.onrender.com";
+
   useEffect(() => {
-    axios.get(`http://localhost:1000/api/menu/get/${id}`)
+    axios.get(url+`/api/menu/get/${id}`)
     .then((res) => setGetapi(res.data.menu))
     .catch((err) => console.log(err))
   },[]);
@@ -30,7 +32,7 @@ function Productview() {
 
   const post = async(id) => {
 
-    const data = await axios.post(`http://localhost:1000/api/cart/post`, {
+    const data = await axios.post(url+`/api/cart/post`, {
       name: getapi.name, price: getapi.price, categories: getapi.categories, qty: qty,img: getapi.img, description: getapi.description, adminId: getapi.adminId, userId: localStorage.getItem("userId")
     })
 
@@ -43,7 +45,7 @@ function Productview() {
 
 
   useEffect(() => {
-    axios.get(`http://localhost:1000/api/cart/get/`)
+    axios.get(url+`/api/cart/get/`)
     .then((res) => setMatchdata(res.data.cart))
     .catch((err) => console.log(err))
   },[]);

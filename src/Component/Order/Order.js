@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 
 function Order() {
 
-  const url = `http://localhost:1000`;
+  const url = "https://royal-backend-1.onrender.com";
 
   const userId = localStorage.getItem("userId")
 

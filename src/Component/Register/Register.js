@@ -4,6 +4,8 @@ import axios from "axios";
 
 function Register() {
 
+  const url = "https://royal-backend-1.onrender.com";
+
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,7 +13,7 @@ function Register() {
    const data = async(e) => {
      e.preventDefault();
 
-     const post = await axios.post(`http://localhost:1000/api/signup`, {
+     const post = await axios.post(url+`/api/signup`, {
         username, email, password
      })
      .then((data) => console.log(data))

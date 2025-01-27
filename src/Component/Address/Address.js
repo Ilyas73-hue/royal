@@ -17,14 +17,16 @@ function Address() {
   const [menu_cart, setMenucart] = useState([]);
 
 
+  const url = "https://royal-backend-1.onrender.com";
+
   useEffect(() => {
-     axios.get(`http://localhost:1000/api/address/get`)
+     axios.get(url+`/api/address/get`)
      .then((res) => setAddress(res.data.address))
      .catch((err) => console.log(err))
   },[])
 
   useEffect(() => {
-    axios.get(`http://localhost:1000/api/cart/get`)
+    axios.get(url+`/api/cart/get`)
     .then((res) => setMenucart(res.data.cart))
     .catch((err) => console.log(err))
    },[]);
@@ -49,7 +51,7 @@ function Address() {
   const address_post = async(e) =>{
     e.preventDefault();
 
-    const post = await axios.post(`http://localhost:1000/api/address/post`, {
+    const post = await axios.post(url+`/api/address/post`, {
       door_no, street_name,  city, state, country, pincode, adminId: localStorage.getItem("adminId"), userId: localStorage.getItem("userId")
     })
 
@@ -65,11 +67,13 @@ function Address() {
   const checkout = async(token) => {
    
     
-    const post  = await axios.post(`http://localhost:1000/api/order/post`, {
+    const post  = await axios.post(url+`/api/order/post`, {
       stripe_id: stripe, name: localStorage.getItem("username"), address: address_filter, product: userId_filter, totalAmount: totalAmount, token, userId: localStorage.getItem("userId"), adminId: localStorage.getItem("adminId")
     })
 
-    console.log(post)
+    if(post.status === 200){
+      window.location.href=`/order`
+    }
   
   }
 

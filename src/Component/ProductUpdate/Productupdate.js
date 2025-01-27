@@ -49,13 +49,13 @@ const setFileToBase = (file) =>{
 }
 
 
-
+const url = "https://royal-backend-1.onrender.com";
 
 
    const data = async(e) => {
      e.preventDefault();
 
-     const post = await axios.put(`http://localhost:1000/api/menu/update/${id}`, 
+     const post = await axios.put(url+`/api/menu/update/${id}`, 
         tempData
      )
 
@@ -70,7 +70,7 @@ const setFileToBase = (file) =>{
  console.log(img)
 
    useEffect(() => {
-     const get = axios.get(`http://localhost:1000/api/menu/get/${id}`)
+     const get = axios.get(url+`/api/menu/get/${id}`)
      get.then((res) => { setDatas(res.data.menu) 
         setTempData(res.data.menu) })
      .catch((err) => console.log(err));

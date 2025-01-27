@@ -5,6 +5,8 @@ import axios from "axios";
  
 function Menu() {
 
+  const url = "https://royal-backend-1.onrender.com";
+
     const [categoriesdata , setCategoriesdata] = useState("Desi breakfast");
     const [filtermenu, setFiltermenu] = useState([])
 
@@ -22,7 +24,7 @@ function Menu() {
     const [carddata, setCarddata] = useState([]);
 
       useEffect(() => {
-        const data =   axios.get(`http://localhost:1000/api/menu/get/`)
+        const data =   axios.get(url+`/api/menu/get/`)
           data.then((res) => {setCarddata(res.data.menu) ;
          setFiltermenu(res.data.menu)
           })

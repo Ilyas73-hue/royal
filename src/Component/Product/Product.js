@@ -9,19 +9,20 @@ function Product() {
     const [data, setData] = useState([]);
     const [adminproduct, setAdminProduct] = useState([]);
 
+    const url = "https://royal-backend-1.onrender.com";
 
     const adminId = localStorage.getItem("adminId");
 
 
     useEffect(() => {
-      const get = axios.get(`http://localhost:1000/api/menu/get`)
+      const get = axios.get(url+`/api/menu/get`)
       get.then((res) => { setData(res.data.menu) 
         setAdminProduct(res.data.menu)} )
       .catch((err) => console.log(err));
       },[]);
 
       const handleDelete = async(id) => {
-        const datadelete = await axios.delete(`http://localhost:1000/api/menu/delete/${id}`)
+        const datadelete = await axios.delete(url+`/api/menu/delete/${id}`)
          window.location.reload()
         return  datadelete
       }

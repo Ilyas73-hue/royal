@@ -6,8 +6,8 @@ import { IoMdClose } from "react-icons/io";
 function Adminorder() {
 
 
-     const url = `http://localhost:1000`;
-
+  const url = "https://royal-backend-1.onrender.com";
+  
      const adminId = localStorage.getItem("adminId");
 
   const [adminorder, setAdminOrder] = useState([]);

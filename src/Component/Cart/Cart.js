@@ -15,8 +15,10 @@ function Cart() {
         setQty(1);
       };
 
+      const url = "https://royal-backend-1.onrender.com";
+
       useEffect(() => {
-       axios.get(`http://localhost:1000/api/cart/get`)
+       axios.get(url+`/api/cart/get`)
        .then((res) => setCart(res.data.cart))
        .catch((err) => console.log(err))
       },[]);
@@ -24,7 +26,7 @@ function Cart() {
 
  
       const cartdelete = async(id) => {
-     const data = await axios.delete(`http://localhost:1000/api/cart/delete/${id}`)
+     const data = await axios.delete(url+`/api/cart/delete/${id}`)
      if(data.status === 201){
         window.location.href=`/menu`
      }

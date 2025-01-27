@@ -48,10 +48,12 @@ const setFileToBase = (file) =>{
     }
 }
 
+const url = "https://royal-backend-1.onrender.com";
+
    const data = async(e) => {
      e.preventDefault();
 
-     const post = await axios.post(`http://localhost:1000/api/menu/post`, {
+     const post = await axios.post(url+`/api/menu/post`, {
         name, price, img,categories,description, adminId: localStorage.getItem("adminId")
      })
 

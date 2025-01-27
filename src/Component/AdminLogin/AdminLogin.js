@@ -7,11 +7,13 @@ function AdminLogin() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const url = "https://royal-backend-1.onrender.com";
   
      const data = async(e) => {
        e.preventDefault();
   
-       const post = await axios.post(`http://localhost:1000/api/admin/signin`, {
+       const post = await axios.post(url+`/api/admin/signin`, {
           email, password
        })
        

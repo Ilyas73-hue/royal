@@ -145,6 +145,35 @@ margin-bottom: 15px;
  padding-right: 20px;
 }
 
+@media(max-width: 375px){
+    #address-section-1-div-1-1{
+        width: 300px;
+    }
+    #address-section-1-div-1-1-form-input-1{
+        width: 250px;
+    }
+    
+    #address-section-1-div-1-1-form-input-2{
+        width: 250px;
+    }
+    
+    #address-section-1-div-1-1-form-input-3{
+        width: 250px;
+    }
+    
+    #address-section-1-div-1-1-form-input-4{
+        width: 250px;
+    }
+    
+    #address-section-1-div-1-1-form-input-5{
+        width: 250px;
+    }
+    
+    #address-section-1-div-1-1-form-input-6{
+        width: 250px;
+    }
+}
+
 
 /* Section 2 */
 
@@ -233,4 +262,14 @@ color: var(--primarycolor);
    padding-top: 10px;
    padding-bottom: 10px;
    border-radius: 2px;
+}
+
+@media(max-width: 375px){
+    #address-section-2-div-1-1{
+        width: 300px;
+    }
+
+    #address-section-2-div-1-1-1-p-1{
+     text-align: center;
+    }
 }

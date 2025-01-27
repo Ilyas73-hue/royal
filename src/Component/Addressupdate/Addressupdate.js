@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom';
 function Addressupdate() {
 
 
-  const url = `http://localhost:1000`
+  const url = "https://royal-backend-1.onrender.com";
 
    const [address, setAddress] = useState();
       const [tempData, setTempData] = useState();

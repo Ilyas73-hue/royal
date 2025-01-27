@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Adminhome() {
 
-    const url = `http://localhost:1000`;
+  const url = "https://royal-backend-1.onrender.com";
 
     const [product, setProduct] = useState([]);
     const [order, setOrder] = useState([]);
